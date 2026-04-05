@@ -1,35 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>bibi food</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <style>
       header.scrolled .menus > ul > li::after {
         background-color: var(--text-color-white);
       }
       
     </style>
-  </head>
-  <body>
+  <link type="text/css" rel="stylesheet" href="chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/css/mcafee_fonts.css"></head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
-    <div class="loader">
+    <div class="loader" style="opacity: 0; display: none;">
       <i class="fas fa-utensils loader-icone"></i>
       <p>bibi food</p>
       <div class="loader-ellipses">
@@ -39,8 +26,8 @@
       </div>
     </div>
 
-    <header>
-      <div class="container header my-3 d-none d-lg-flex">
+    <header class="">
+      <div class="container header d-none d-lg-flex my-3">
         <div class="logo">
           <a href="./index.html">
             <i class="fa fa-utensils me-3"></i>
@@ -50,29 +37,19 @@
         <div class="menus">
           <ul class="d-flex mb-0">
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./index.html"
-                >خانه</a
-              >
+              <a class="text-decoration-none text-uppercase p-4" href="./index.html">خانه</a>
             </li>
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./about.html"
-                >درباره</a
-              >
+              <a class="text-decoration-none text-uppercase p-4" href="./about.html">درباره</a>
             </li>
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./reservation.html"
-                >رزرو انلاین ¬ به زودی...</a
-              >
+              <a class="text-decoration-none text-uppercase p-4" href="./reservation.html">رزرو انلاین ¬ به زودی...</a>
             </li>
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./menu.html"
-                >منو</a
-              >
+              <a class="text-decoration-none text-uppercase p-4" href="./menu.html">منو</a>
             </li>
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./contact.html"
-                >ارتباط</a
-              >
+              <a class="text-decoration-none text-uppercase p-4" href="./contact.html">ارتباط</a>
             </li>
           </ul>
         </div>
@@ -108,36 +85,26 @@
             </a>
           </div>
         </div>
-        <div class="position-fixed w-75 bg-white h-100 top-0 start-0" id="mobile-menu">
+        <div class="position-fixed w-75 bg-white h-100 top-0 start-0" id="mobile-menu" style="transform: translateX(-100%);">
           <div id="hamburger-cross" class="d-flex justify-content-end align-items-center py-2">
             <i class="fa fa-2x fa-plus me-3 "></i>
           </div>
           <div class="menus">
             <ul class="d-flex flex-column ps-2 mb-0 mt-4">
               <li class="list-unstyled py-2">
-                <a class="text-dark text-decoration-none text-uppercase p-4" href="#"
-                  >خانه</a
-                >
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="#">خانه</a>
               </li>
               <li class="list-unstyled py-2">
-                <a class="text-dark text-decoration-none text-uppercase p-4" href="./about.html"
-                  >درباره</a
-                >
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./about.html">درباره</a>
               </li>
               <li class="list-unstyled py-2">
-                <a class="text-dark text-decoration-none text-uppercase p-4" href="./reservation.html"
-                  >رزرو انلاین ¬ به زودی...</a
-                >
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./reservation.html">رزرو انلاین ¬ به زودی...</a>
               </li>
               <li class="list-unstyled py-2">
-                <a class="text-dark text-decoration-none text-uppercase p-4" href="./menu.html"
-                  >منو</a
-                >
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./menu.html">منو</a>
               </li>
               <li class="list-unstyled py-2">
-                <a class="text-dark text-decoration-none text-uppercase p-4" href="./contact.html"
-                  >ارتباط</a
-                >
+                <a class="text-dark text-decoration-none text-uppercase p-4" href="./contact.html">ارتباط</a>
               </li>
             </ul>
           </div>
@@ -150,7 +117,7 @@
         <i class="fa fa-close"></i>
       </div>
       <div class="search-bar-wrapper">
-        <input type="search" placeholder="Enter any text here..." />
+        <input type="search" placeholder="Enter any text here...">
         <div class="search-button">
           <a href="#"><i class="fa fa-search"></i></a>
         </div>
@@ -232,7 +199,7 @@
         <div class="d-flex justify-content-between px-3 py-2">
           <div>
             <h2 class="mb-0">Subtotal</h2>
-            <p class="mb-0">Shipping & taxes calculated at checkout</p>
+            <p class="mb-0">Shipping &amp; taxes calculated at checkout</p>
           </div>
           <div class="d-flex align-items-end">
             <p class="footet-total-price mb-0">$ 92.0</p>
@@ -255,17 +222,18 @@
       <section class="banner py-5">
         <div class="container py-5">
           <div class="row">
-            <div class="col-md-6 banner-content pe-5" data-aos="fade-right" data-aos-delay="3000">
-              <h1 class="display-2">Enjoy Our <br> Delicious Meal</h1>
+            <div class="col-md-6 banner-content pe-5 aos-init aos-animate" data-aos="fade-right" data-aos-delay="3000">
+              <h1 class="display-2">حس غذای خوش مزه<br>bibi food</h1>
                 <p>
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                  بیبی فود اینجاست تا به شما حس یک غدای خوشمزه توی کمترین زمان با بهترین کیفیت و به یاد موندنی ترین طعم در انگلستان رو بده
+غذا های خوشمزه و به یاد موندنی رو با بیبی فود تجربه کنید
                 </p>
                 <div class="book-a-table">
                   <div class="anim-layer"></div>
-                  <a href="#">Book a table</a>
+                  
                 </div>
             </div>
-            <div class="col-md-6 banner-img" data-aos="fade-left" data-aos-delay="3000">
+            <div class="col-md-6 banner-img aos-init aos-animate" data-aos="fade-left" data-aos-delay="3000">
               <img class="img img-fluid mt-5 mt-lg-0" src="./assets/images/banner-img.png" alt="">
             </div>
           </div>
@@ -276,7 +244,7 @@
         <div class="container">
           <div class="row gy-4">
             <div class="col-md-3">
-              <div class="cards px-4 py-5" data-aos="fade-right">
+              <div class="cards px-4 py-5 aos-init" data-aos="fade-right">
                 <div class="anim-layer"></div>
                 <div class="icon"> 
                   <i class="fa fa-3x fa-user-tie mb-4"></i>
@@ -290,7 +258,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="cards px-4 py-5" data-aos="fade-down">
+              <div class="cards px-4 py-5 aos-init" data-aos="fade-down">
                 <div class="anim-layer"></div>
                 <div class="icon">
                   <i class="fa fa-3x fa-utensils mb-4"></i>
@@ -304,7 +272,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="cards px-4 py-5" data-aos="fade-up">
+              <div class="cards px-4 py-5 aos-init" data-aos="fade-up">
                 <div class="anim-layer"></div>
                 <div class="icon">
                   <i class="fa fa-3x fa-cart-plus mb-4"></i>
@@ -318,7 +286,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="cards px-4 py-5" data-aos="fade-left">
+              <div class="cards px-4 py-5 aos-init" data-aos="fade-left">
                 <div class="anim-layer"></div>
                 <div class="icon">
                   <i class="fa fa-3x fa-headset mb-4"></i>
@@ -340,21 +308,21 @@
           <div class="row gy-5 g-lg-5 align-items-center">
               <div class="col-lg-6 about-img-box">
                   <div class="row g-3">
-                      <div class="col-6" data-aos="fade-right">
+                      <div class="col-6 aos-init" data-aos="fade-right">
                           <img class="img-fluid rounded w-100" src="./assets/images/about-1.jpg">
                       </div>
-                      <div class="col-6 text-right" data-aos="fade-down">
+                      <div class="col-6 text-right aos-init" data-aos="fade-down">
                           <img class="img-fluid rounded w-75" src="./assets/images/about-2.jpg">
                       </div>
-                      <div class="col-6 text-end" data-aos="fade-right">
+                      <div class="col-6 text-end aos-init" data-aos="fade-right">
                           <img class="img-fluid rounded w-75" src="./assets/images/about-3.jpg">
                       </div>
-                      <div class="col-6 text-end" data-aos="fade-up">
+                      <div class="col-6 text-end aos-init" data-aos="fade-up">
                           <img class="img-fluid rounded w-100" src="./assets/images/about-4.jpg">
                       </div>
                   </div>
               </div>
-              <div class="col-lg-6 about-content" data-aos="fade-left">
+              <div class="col-lg-6 about-content aos-init" data-aos="fade-left">
                   <h5 class="section-title">About Us</h5>
                   <h2 class="mb-4 dis">Welcome to <i class="fa fa-utensils  me-2"></i>Restoran</h2>
                   <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
@@ -390,15 +358,15 @@
 
       <section class="our-menu py-5 my-5">
         <div class="container">
-          <div class="row" data-aos="fade-right">
+          <div class="row aos-init" data-aos="fade-right">
             <div class="section-title text-center">
               <h5>Our Menu</h5>
               <h2 class="display-5 fw-bold">Tasty And Good Price</h2>
             </div>
           </div>
           <div class="row  position-relative">
-            <div data-aos="fade-left" class="slider slider-indicators-wrapper justify-content-center">
-              <div class="slider-indicators">
+            <div data-aos="fade-left" class="slider slider-indicators-wrapper justify-content-center slick-initialized slick-slider aos-init">
+              <div class="slick-list"><div class="slick-track" style="opacity: 1; width: 1000px; transform: translate3d(0px, 0px, 0px);"><div class="slider-indicators slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100px;">
                 <div class="indicators-icon active text-center">
                   <i class="fas fa-coffee fa-2x"></i>
                 </div>
@@ -407,8 +375,7 @@
                     Breakfast
                   </h5>
                 </div>
-              </div>
-              <div class="slider-indicators">
+              </div><div class="slider-indicators slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 100px;">
                 <div class="indicators-icon text-center">
                   <i class="fas fa-utensils fa-2x"></i>
                 </div>
@@ -417,8 +384,7 @@
                     Lunch
                   </h5>
                 </div>
-              </div>
-              <div class="slider-indicators">
+              </div><div class="slider-indicators slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 100px;">
                 <div class="indicators-icon text-center">
                   <i class="fas fa-hamburger fa-2x"></i>
                 </div>
@@ -427,8 +393,7 @@
                     Dinner
                   </h5>
                 </div>
-              </div>
-              <div class="slider-indicators">
+              </div><div class="slider-indicators slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="0" style="width: 100px;">
                 <div class="indicators-icon text-center">
                   <i class="fas fa-ice-cream fa-2x"></i>
                 </div>
@@ -437,8 +402,7 @@
                     Desserts
                   </h5>
                 </div>
-              </div>
-              <div class="slider-indicators">
+              </div><div class="slider-indicators slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" style="width: 100px;">
                 <div class="indicators-icon text-center">
                   <i class="fas fa-cocktail fa-2x"></i>
                 </div>
@@ -447,11 +411,15 @@
                     Drink
                   </h5>
                 </div>
-              </div>
+              </div></div></div>
+              
+              
+              
+              
             </div>
           </div>
-          <div id="our-menus" class="slider" data-aos="fade-up">
-            <div>
+          <div id="our-menus" class="slider slick-initialized slick-slider aos-init" data-aos="fade-up">
+            <div class="slick-list"><div class="slick-track" style="opacity: 1; width: 5184px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 1296px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
               <div class="row my-5 py-3">
               <div class="col-lg-5">
                 <div class="pb-5 pb-lg-0">
@@ -469,7 +437,7 @@
                     <span class="price-symbol">$</span>
                       25.0</span>
                     <div class="item-btn">
-                      <a href="#">Order</a>
+                      <a href="#" tabindex="0">Order</a>
                     </div>
                   </div>
                 </div>
@@ -483,7 +451,7 @@
                     <span class="price-symbol">$</span>
                       45.0</span>
                     <div class="item-btn">
-                      <a href="#">Order</a>
+                      <a href="#" tabindex="0">Order</a>
                     </div>
                   </div>
                 </div>
@@ -497,7 +465,7 @@
                     <span class="price-symbol">$</span>
                       30.0</span>
                     <div class="item-btn">
-                      <a href="#">Order</a>
+                      <a href="#" tabindex="0">Order</a>
                     </div>
                   </div>
                 </div>
@@ -511,7 +479,7 @@
                     <span class="price-symbol">$</span>
                       12.0</span>
                     <div class="item-btn">
-                      <a href="#">Order</a>
+                      <a href="#" tabindex="0">Order</a>
                     </div>
                   </div>
                 </div>
@@ -525,14 +493,13 @@
                     <span class="price-symbol">$</span>
                       12.0</span>
                     <div class="item-btn">
-                      <a href="#">Order</a>
+                      <a href="#" tabindex="0">Order</a>
                     </div>
                   </div>
                 </div>
               </div>
               </div>
-            </div>
-            <div>
+            </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 1296px; position: relative; left: -1296px; top: 0px; z-index: 998; opacity: 0;">
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
                   <div class="pb-5 pb-lg-0">
@@ -550,7 +517,7 @@
                       <span class="price-symbol">$</span>
                         25.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -564,7 +531,7 @@
                       <span class="price-symbol">$</span>
                         45.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -578,7 +545,7 @@
                       <span class="price-symbol">$</span>
                         30.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -592,7 +559,7 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -606,14 +573,13 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
+            </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 1296px; position: relative; left: -2592px; top: 0px; z-index: 998; opacity: 0;">
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
                   <div class="pb-5 pb-lg-0">
@@ -631,7 +597,7 @@
                       <span class="price-symbol">$</span>
                         25.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -645,7 +611,7 @@
                       <span class="price-symbol">$</span>
                         45.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -659,7 +625,7 @@
                       <span class="price-symbol">$</span>
                         30.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -673,7 +639,7 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -687,14 +653,13 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
+            </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 1296px; position: relative; left: -3888px; top: 0px; z-index: 998; opacity: 0;">
               <div class="row my-5 py-3 ">
                 <div class="col-lg-5">
                   <div class="pb-5 pb-lg-0">
@@ -712,7 +677,7 @@
                       <span class="price-symbol">$</span>
                         25.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -726,7 +691,7 @@
                       <span class="price-symbol">$</span>
                         45.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -740,7 +705,7 @@
                       <span class="price-symbol">$</span>
                         30.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -754,7 +719,7 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
@@ -768,56 +733,32 @@
                       <span class="price-symbol">$</span>
                         12.0</span>
                       <div class="item-btn">
-                        <a href="#">Order</a>
+                        <a href="#" tabindex="-1">Order</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div></div></div>
+            
+            
+            
           </div>
         </div>
       </section>
 
       <section class="testimonials py-5 my-5">
         <div class="container py-5">
-          <div class="row" data-aos="fade-right">
+          <div class="row aos-init" data-aos="fade-right">
             <div class="section-title text-center">
               <h5>Testimonial</h5>
               <h2 class="display-5 fw-bold">Our Customer Says</h2>
             </div>
           </div>
           <div class="row">
-            <div class="testimonial-slider-wrapper" data-aos="fade-up">
-              <div class="slider-content pt-4 pb-4 mx-4">
-                <div>
-                  <div class="testi-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
-                  </div>
-                  <div class="testi-info">
-                    <span class="name">Timothy Doe</span>
-                    <span class="position">Customer</span>
-                  </div>
-                </div>
-                <div>
-                  <div class="testi-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
-                  </div>
-                  <div class="testi-info">
-                    <span class="name">Sarah	Ruiz</span>
-                    <span class="position">Director</span>
-                  </div>
-                </div>
-                <div>
-                  <div class="testi-content">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
-                  </div>
-                  <div class="testi-info">
-                    <span class="name">Tracey Lewis</span>
-                    <span class="position">Designer</span>
-                  </div>
-                </div>
-                <div>
+            <div class="testimonial-slider-wrapper aos-init" data-aos="fade-up">
+              <div class="slider-content pt-4 pb-4 mx-4 slick-initialized slick-slider">
+                <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 11232px; transform: translate3d(-1248px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 1248px;">
                   <div class="testi-content">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
                   </div>
@@ -825,22 +766,105 @@
                     <span class="name">Jamie	Erickson</span>
                     <span class="position">Manager</span>
                   </div>
-                </div>
+                </div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Timothy Doe</span>
+                    <span class="position">Customer</span>
+                  </div>
+                </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Sarah	Ruiz</span>
+                    <span class="position">Director</span>
+                  </div>
+                </div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Tracey Lewis</span>
+                    <span class="position">Designer</span>
+                  </div>
+                </div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Jamie	Erickson</span>
+                    <span class="position">Manager</span>
+                  </div>
+                </div><div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Timothy Doe</span>
+                    <span class="position">Customer</span>
+                  </div>
+                </div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Sarah	Ruiz</span>
+                    <span class="position">Director</span>
+                  </div>
+                </div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Tracey Lewis</span>
+                    <span class="position">Designer</span>
+                  </div>
+                </div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1" style="width: 1248px;">
+                  <div class="testi-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto vel ipsa dolore sunt vitae, culpa, dolor reiciendis facilis sed blanditiis repellat incidunt impedit iusto? Odio veniam beatae veritatis adipisci a!</p>
+                  </div>
+                  <div class="testi-info">
+                    <span class="name">Jamie	Erickson</span>
+                    <span class="position">Manager</span>
+                  </div>
+                </div></div></div>
+                
+                
+                
               </div>
               <div class="slider-nav-wrapper mx-5">
-                <div class="slider-nav">
-                  <div class="slider-nav-img active">
+                <div class="slider-nav slick-initialized slick-slider">
+                  <div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 1008px; transform: translate3d(-252px, 0px, 0px);"><div class="slider-nav-img active slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
                     <img src="./assets/images/testi-1.jpg" alt="">
-                  </div>
-                  <div class="slider-nav-img">
+                  </div><div class="slider-nav-img slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
                     <img src="./assets/images/testi-2.jpg" alt="">
-                  </div>
-                  <div class="slider-nav-img">
+                  </div><div class="slider-nav-img slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
                     <img src="./assets/images/testi-3.jpg" alt="">
-                  </div>
-                  <div class="slider-nav-img">
+                  </div><div class="slider-nav-img slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1" style="width: 84px;">
                     <img src="./assets/images/testi-4.jpg" alt="">
-                  </div>
+                  </div><div class="slider-nav-img active slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 84px;">
+                    <img src="./assets/images/testi-1.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 84px;">
+                    <img src="./assets/images/testi-2.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide" data-slick-index="2" aria-hidden="true" tabindex="0" style="width: 84px;">
+                    <img src="./assets/images/testi-3.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 84px;">
+                    <img src="./assets/images/testi-4.jpg" alt="">
+                  </div><div class="slider-nav-img active slick-slide slick-cloned slick-center" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
+                    <img src="./assets/images/testi-1.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
+                    <img src="./assets/images/testi-2.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
+                    <img src="./assets/images/testi-3.jpg" alt="">
+                  </div><div class="slider-nav-img slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1" style="width: 84px;">
+                    <img src="./assets/images/testi-4.jpg" alt="">
+                  </div></div></div>
+                  
+                  
+                  
                 </div>
               </div>
             </div>
@@ -850,15 +874,15 @@
 
       <section class="our-chefs py-5">
         <div class="container">
-          <div class="row" data-aos="fade-right">
+          <div class="row aos-init" data-aos="fade-right">
             <div class="section-title text-center">
               <h5>Meet Our</h5>
               <h2 class="display-6 fw-bold">Awesome Master Chefs</h2>
             </div>
           </div>
 
-          <div class="row our-chef-slider-wrapper py-5" data-aos="fade-left">
-            <div class="col-lg-4">
+          <div class="row our-chef-slider-wrapper py-5 slick-initialized slick-slider aos-init" data-aos="fade-left"><button class="slide-arrow prev-arrow slick-arrow" style="" fdprocessedid="46h7i"><i class="fas fa-chevron-left"></i></button>
+            <div class="slick-list" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 5280px; transform: translate3d(-1320px, 0px, 0px);"><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
               <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
                 <img width="200px" src="./assets/images/team-1.png" alt="">
                 <div class="chef-slider-content">
@@ -869,30 +893,29 @@
                   </div> 
                   <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">
-                      <a href="https://www.facebook.com" target="_blank" class="text-white">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.instagram.com" target="_blank" class="text-white">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.twitter.com" target="_blank" class="text-white">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
+            </div><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
               <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
                 <img width="200px" src="./assets/images/team-2.png" alt="">
                 <div class="chef-slider-content">
@@ -903,30 +926,29 @@
                   </div> 
                   <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">
-                      <a href="https://www.facebook.com" target="_blank" class="text-white">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.instagram.com" target="_blank" class="text-white">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.twitter.com" target="_blank" class="text-white">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
+            </div><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
               <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
                 <img width="200px" src="./assets/images/team-3.png" alt="">
                 <div class="chef-slider-content">
@@ -937,30 +959,29 @@
                   </div> 
                   <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">
-                      <a href="https://www.facebook.com" target="_blank" class="text-white">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.instagram.com" target="_blank" class="text-white">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.twitter.com" target="_blank" class="text-white">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
                         <i class="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4">
+            </div><div class="col-lg-4 slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1" style="width: 440px;">
               <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
                 <img width="200px" src="./assets/images/team-4.png" alt="">
                 <div class="chef-slider-content">
@@ -971,30 +992,297 @@
                   </div> 
                   <ul class="list-unstyled d-flex justify-content-center">
                     <li class="mx-2">
-                      <a href="https://www.facebook.com" target="_blank" class="text-white">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="0">
                         <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.instagram.com" target="_blank" class="text-white">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="0">
                         <i class="fab fa-instagram"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.twitter.com" target="_blank" class="text-white">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="0">
                         <i class="fab fa-twitter"></i>
                       </a>
                     </li>
                     <li class="mx-2">
-                      <a href="https://www.linkedin.com" target="_blank" class="text-white">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="0">
                         <i class="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><div class="col-lg-4 slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-1.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-2.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="0">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide" data-slick-index="2" aria-hidden="true" tabindex="0" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-3.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-4.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide slick-cloned slick-center" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-1.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-2.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-3.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><div class="col-lg-4 slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1" style="width: 440px;">
+              <div class="our-chef-slider d-flex flex-column align-items-center gap-4">
+                <img width="200px" src="./assets/images/team-4.png" alt="">
+                <div class="chef-slider-content">
+                  <h5 class="text-center d-block">Teresa Doe</h5>
+                  <p class="text-center mb-0">Head Chef</p>
+                  <div class="d-flex justify-content-center">
+                    <hr class="w-25 my-2">
+                  </div> 
+                  <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2">
+                      <a href="https://www.facebook.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.instagram.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.twitter.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="mx-2">
+                      <a href="https://www.linkedin.com" target="_blank" class="text-white" tabindex="-1">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div></div></div>
+            
+            
+            
+          <button class="slide-arrow next-arrow slick-arrow" style="" fdprocessedid="qw3s38"><i class="fas fa-chevron-right"></i></button></div>
           
         </div>
       </section>
@@ -1003,7 +1291,7 @@
         <img class="d-md-none d-lg-block" src="./assets/images/find-a-table.png" alt="">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 py-5 reservation-content px-5" data-aos="fade-right">
+            <div class="col-lg-6 py-5 reservation-content px-5 aos-init" data-aos="fade-right">
               <div class="reservation-column py-5 px-3">
                 <h2 class="text-center text-white display-6 fw-bold">Make A Reservation</h2>
                 <p class="text-center text-white">You can call us directly at <span>225-88888</span></p>
@@ -1011,13 +1299,13 @@
                   <div class="col-12 col-lg-6">
                     <div class="input d-flex align-items-center">
                       <i class="fa fa-phone py-2 px-3"></i>
-                      <input class="form-control bg-transparent border-0 px-3" type="text" placeholder="Number">
+                      <input class="form-control bg-transparent border-0 px-3" type="text" placeholder="Number" fdprocessedid="hef0o">
                     </div>
                   </div>
                   <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                     <div class="input d-flex align-items-center">
                       <i class="fa fa-person py-2 px-3"></i>
-                      <select class="form-select bg-transparent border-0" name="" id="">
+                      <select class="form-select bg-transparent border-0" name="" id="" fdprocessedid="1m02cb">
                         <option value="">1 Person</option>
                         <option value="">2 Person</option>
                         <option value="">3 Person</option>
@@ -1042,7 +1330,7 @@
                   <div class="col-12 col-lg-6 mt-4 mt-lg-0">
                     <div class="input d-flex align-items-center">
                       <i class="fa fa-clock py-2 px-3"></i>
-                      <select type="text" placeholder="Time" class="form-select bg-transparent border-0">
+                      <select type="text" placeholder="Time" class="form-select bg-transparent border-0" fdprocessedid="76wbga">
                         <option>7:00 AM</option>
                         <option>8:00 AM</option>
                         <option>9:00 AM</option>
@@ -1071,7 +1359,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 d-none d-md-block reservation-bg" data-aos="fade-left"></div>
+            <div class="col-lg-6 d-none d-md-block reservation-bg aos-init" data-aos="fade-left"></div>
           </div>
         </div>
       </section>
@@ -1079,13 +1367,13 @@
       <section class="our-services py-5 my-5">
         <div class="container">
           <div class="row">
-            <div class="section-title text-center" data-aos="fade-right">
+            <div class="section-title text-center aos-init" data-aos="fade-right">
               <h5>Our Service</h5>
               <h2 class="display-6 fw-bold">What We Focus On</h2>
             </div>
           </div>
           <div class="row pt-5">
-            <div data-aos="fade-up-right" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <div data-aos="fade-up-right" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column aos-init">
               <div class="icon-box">
                 <i class="fas fa-utensils fa-2x"></i>
                 <span class="number">1</span>
@@ -1093,7 +1381,7 @@
               <h4>Reservation</h4>
               <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
             </div>
-            <div data-aos="fade-down" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <div data-aos="fade-down" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column aos-init">
               <div class="icon-box">
                 <i class="fas fa-wine-glass-alt fa-2x"></i>
                 <span class="number">2</span>
@@ -1101,7 +1389,7 @@
               <h4>Private Event</h4>
               <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
             </div>
-            <div data-aos="fade-up" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <div data-aos="fade-up" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column aos-init">
               <div class="icon-box">
                 <i class="fas fa-laptop-house fa-2x"></i>
                 <span class="number">3</span>
@@ -1109,7 +1397,7 @@
               <h4>Online Order</h4>
               <p class="text-center">Lorem ipsum dolor sit amet, tong consecteturto sed eiusmod incididunt utote labore et</p>
             </div>
-            <div data-aos="fade-up-left" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+            <div data-aos="fade-up-left" class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center flex-column aos-init">
               <div class="icon-box">
                 <i class="fas fa-motorcycle fa-2x"></i>
                 <span class="number">4</span>
@@ -1124,35 +1412,35 @@
       <section class="our-gallery pt-5">
         <div class="container-fluid pt-5">
           <div class="row">
-            <div class="section-title text-center" data-aos="fade-right">
+            <div class="section-title text-center aos-init" data-aos="fade-right">
               <h5>Our Gallery</h5>
               <h2 class="text-white display-6 fw-bold">Fooday Hot Dishes</h2>
             </div>
           </div>
           <div class="row pt-5">
             <div class="col-md-3 p-0">
-              <div data-aos="fade-down-right" class="gallery-image gallery-image-one"></div>
+              <div data-aos="fade-down-right" class="gallery-image gallery-image-one aos-init"></div>
             </div>
             <div class="col-md-6 p-0">
               <div class="row m-0">
                 <div class="col-md-8 p-0">
-                  <div data-aos="fade-down" class="gallery-image-two"></div>
+                  <div data-aos="fade-down" class="gallery-image-two aos-init"></div>
                 </div>
                 <div class="col-md-4 p-0">
-                  <div data-aos="fade-down" class="gallery-image-three"></div>
+                  <div data-aos="fade-down" class="gallery-image-three aos-init"></div>
                 </div>
               </div>
               <div class="row m-0">
                 <div class="col-md-4 p-0">
-                  <div data-aos="fade-up" class="gallery-image-five"></div>
+                  <div data-aos="fade-up" class="gallery-image-five aos-init"></div>
                 </div>
                 <div class="col-md-8 p-0">
-                  <div data-aos="fade-up" class="gallery-image-six"></div>
+                  <div data-aos="fade-up" class="gallery-image-six aos-init"></div>
                 </div>
               </div>
             </div>
             <div class="col-md-3 p-0">
-              <div data-aos="fade-up-left" class="gallery-image gallery-image-four"></div>
+              <div data-aos="fade-up-left" class="gallery-image gallery-image-four aos-init"></div>
             </div>
           </div>
         </div>
@@ -1161,14 +1449,14 @@
       <section class="our-blog pt-5 my-5">
         <div class="container">
           <div class="row">
-            <div class="section-title text-center" data-aos="fade-right">
+            <div class="section-title text-center aos-init" data-aos="fade-right">
               <h5>Updated from</h5>
               <h2 class="display-6 fw-bold">Our Featured Blog</h2>
             </div>
           </div>
           <div class="row pt-5">
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="card" data-aos="fade-up-right">
+              <div class="card aos-init" data-aos="fade-up-right">
                 <div class="blog-info d-flex py-3">
                   <div class="blog-view px-3">
                     <i class="fas fa-eye"></i>
@@ -1207,7 +1495,7 @@
               </div>
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="card" data-aos="fade-down">
+              <div class="card aos-init" data-aos="fade-down">
                 <div class="blog-info d-flex py-3">
                   <div class="blog-view px-3">
                     <i class="fas fa-eye"></i>
@@ -1246,7 +1534,7 @@
               </div>
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="card" data-aos="fade-up-left">
+              <div class="card aos-init" data-aos="fade-up-left">
                 <div class="blog-info d-flex py-3">
                   <div class="blog-view px-3">
                     <i class="fas fa-eye"></i>
@@ -1293,21 +1581,21 @@
       </section>
 
       <section class="subscribe-us pb-5 mb-5">
-        <img class="d-none d-lg-block" src="./assets/images/subscribe-us.png" alt="" data-aos="fade-down-right">
+        <img class="d-none d-lg-block aos-init" src="./assets/images/subscribe-us.png" alt="" data-aos="fade-down-right">
         <div class="container">
           <div class="row">
             <div class="col-lg-2">
             </div>
             <div class="col-lg-8 d-flex flex-column flex-md-row align-items-lg-center">
-              <div class="content" data-aos="fade-right">
+              <div class="content aos-init" data-aos="fade-right">
                 <h5 class="display-6 text-black">Subcribe Us Now</h5>
                 <p>
                   Get more news and delicious dishes everyday from us
                 </p>
               </div>
-              <div class="subscribe-form d-flex ps-0 ms-0 ps-lg-5 ms-lg-5" data-aos="fade-left">
+              <div class="subscribe-form d-flex ps-0 ms-0 ps-lg-5 ms-lg-5 aos-init" data-aos="fade-left">
                 <div class="input-form w-100">
-                  <input class="border-0 px-3 w-100" type="email" placeholder="Email">
+                  <input class="border-0 px-3 w-100" type="email" placeholder="Email" fdprocessedid="85jkgm">
                 </div>
                 <div class="input-button">
                   <a class="text-decoration-none" href="#">
@@ -1333,14 +1621,14 @@
           <div class="footer-content col-xl-8  px-4">
             <div class="row">
               <div class="col-lg-6 px-0">
-                <div class="logo" data-aos="fade-down-right">
+                <div class="logo aos-init" data-aos="fade-down-right">
                   <a href="./index.html">
                     <i class="fa fa-utensils me-3"></i>
                     <h1 class="mb-0">Restoran</h1>
                   </a>
                 </div>
               </div>
-              <div data-aos="fade-down" class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end">
+              <div data-aos="fade-down" class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end aos-init">
                 <div class="social-icons d-flex">
                   <ul class="d-flex mb-0 ps-0">
                     <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -1351,10 +1639,10 @@
                 </div>
               </div>
             </div>
-            <div class="row pt-5 content-desc" data-aos="fade-right">
+            <div class="row pt-5 content-desc aos-init" data-aos="fade-right">
               <p class="px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor.</p>
             </div>
-            <div class="row" data-aos="fade-right">
+            <div class="row aos-init" data-aos="fade-right">
               <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
                 <div class="location d-flex align-items-center pe-2 py-3">
                   <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
@@ -1387,7 +1675,7 @@
             </div>
           </div>
           <div class="col-xl-4">
-            <div class="reservation-box" data-aos="fade-down-left">
+            <div class="reservation-box aos-init" data-aos="fade-down-left">
               <div class="reservation-wrapper">
                 <h2>Open Hour</h2>
                 <div class="reservation-date-time">
@@ -1406,18 +1694,15 @@
           </div>
         </div>
         <div class="row">
-          <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Restoran.</b> All rights reserved. Design by <a href="https://www.linkedin.com/in/codewithshabbir/" class="fw-bold author-name">Muhammad Shabbir</a></p>
+          <p class="text-center pt-4 mt-3 pt-lg-0">© <span id="copyrightCurrentYear">2026</span> <b> Restoran.</b> All rights reserved. Design by <a href="https://www.linkedin.com/in/codewithshabbir/" class="fw-bold author-name">Muhammad Shabbir</a></p>
         </div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
-  </body>
-</html>
+  
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><span id="PING_CONTENT_DLS_POPUP" style="display: none;"></span><div style="background-color: transparent; border: none; bottom: 15px; display: block; margin: 0px; opacity: 1; padding: 0px; position: fixed; right: 15px; z-index: 2147483647;"></div></body></html>
